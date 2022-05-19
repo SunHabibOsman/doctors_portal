@@ -8,11 +8,11 @@ const Contact = () => {
           <h3 className='text-primary font-bold '>contact us</h3>
           <h2 className='text-white text-3xl'>Stay Connected with us</h2>
         </div>
-        <input type="text" placeholder="Name" class="input input-bordered input-accent w-full max-w-xs my-4" />
+        <input type="text" placeholder="Name" className="input input-bordered input-accent w-full max-w-xs my-4" />
         <br />
-        <input type="text" placeholder="Subject Here" class="input input-bordered input-accent w-full max-w-xs " />
+        <input type="text" placeholder="Subject Here" className="input input-bordered input-accent w-full max-w-xs " />
         <br />
-        <textarea class="textarea textarea-accent my-4 w-full max-w-xs" placeholder="Bio"></textarea><br />
+        <textarea className="textarea textarea-accent my-4 w-full max-w-xs" placeholder="Bio"></textarea><br />
         <button className='btn btn-primary text-white'>Submit</button>
       </div>
 

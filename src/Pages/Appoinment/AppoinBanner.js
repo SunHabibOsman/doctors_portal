@@ -5,8 +5,8 @@ import Chair from '../../assets/images/chair.png'
 const AppoinBanner = ({ date, setDate }) => {
   return (
     <div>
-      <div class="hero ">
-        <div class="hero-content flex-col lg:flex-row-reverse">
+      <div className="hero ">
+        <div className="hero-content flex-col lg:flex-row-reverse">
           <img className='w-3/6' src={Chair} />
           <div>
             <DayPicker
