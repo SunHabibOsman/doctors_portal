@@ -5,7 +5,7 @@ import Rawdetails from './Rawdetails';
 
 const Users = () => {
   const { data: auser, isLoading, refetch } = useQuery('users', () =>
-    fetch('http://localhost:5000/user')
+    fetch('https://damp-reaches-43552.herokuapp.com/user')
       .then(res => res.json()))
   if (isLoading) {
     return <Loading></Loading>

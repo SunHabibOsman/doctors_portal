@@ -11,7 +11,7 @@ const AppoinService = ({ date }) => {
   const formattedDate = format(date, 'PP')
 
 
-  const { data: service, isLoading, refetch } = useQuery(['available', formattedDate], () => fetch(`http://localhost:5000/available?date=${formattedDate}`)
+  const { data: service, isLoading, refetch } = useQuery(['available', formattedDate], () => fetch(`https://damp-reaches-43552.herokuapp.com/available?date=${formattedDate}`)
     .then(res => res.json())
   )
   if (isLoading) {
@@ -19,7 +19,7 @@ const AppoinService = ({ date }) => {
   }
 
   // useEffect(() => {
-  //   fetch(`http://localhost:5000/available?date=${formattedDate}`)
+  //   fetch(`https://damp-reaches-43552.herokuapp.com/available?date=${formattedDate}`)
   //     .then(res => res.json())
   //     .then(data => setService(data))
 
@@ -35,6 +35,7 @@ const AppoinService = ({ date }) => {
             key={data._id}
             services={data}
             date={date}
+            refetch={refetch}
             setTreatement={setTreatement}
 
           ></DetailsService>)

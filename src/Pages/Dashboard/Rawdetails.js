@@ -5,7 +5,7 @@ import Loading from '../../Loading';
 
 const Rawdetails = ({ key, data, refetch }) => {
   const handleAdmin = () => {
-    fetch(`http://localhost:5000/user/admin/${data.email}`, {
+    fetch(`https://damp-reaches-43552.herokuapp.com/user/admin/${data.email}`, {
       method: "PUT",
       headers: {
         authorization: `Bearer ${localStorage.getItem('accessToken')}`

@@ -11,7 +11,7 @@ const useAdmin = (user) => {
     console.log(email);
 
     if (email) {
-      fetch(`http://localhost:5000/admin/${email}`, {
+      fetch(`https://damp-reaches-43552.herokuapp.com/admin/${email}`, {
         method: "GET",
         headers: {
           'Content-type': 'application/json; charset=UTF-8',

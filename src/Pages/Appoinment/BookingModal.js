@@ -22,7 +22,7 @@ const BookingModal = ({ treatment, date, setTreatement, refetch }) => {
       patientName: user.displayName,
       phone: number
     };
-    fetch('http://localhost:5000/booking', {
+    fetch('https://damp-reaches-43552.herokuapp.com/booking', {
       method: 'POST',
       body: JSON.stringify(booking),
       headers: {
